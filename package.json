@@ -7,11 +7,17 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "inlined-build": "vite build --config vite.config.ts",
+    "inlined-preview": "vite build --config vite.config.ts && start ./dist/index.html"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "vite-plugin-singlefile": "^0.13.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
