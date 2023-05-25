@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -34,7 +36,7 @@ const Home = () => {
           <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-lgtransition ${secondsLeft <= 0 ? 'hover:bg-transparent hover:duration-300 ' : ''} duration-500 ease-in-out rounded-lg`}>
             <button 
             className={`${secondsLeft > 0 ? 'px-5 py-3' : ''} w-full h-full block  border-none outline-none rounded-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500
-        background-animate ${secondsLeft <= 0 ? 'hover:text-white transition hover:duration-250' : ''} ease-in-out`} disabled={secondsLeft > 0}>{secondsLeft > 0 ? `Waiting...0${secondsLeft}` : <Link className="px-5 py-3 block" to="https://play.google.com/store/apps/details?id=com.edujoy.kidecat&referrer=af_tranid%3D0u1_S-u5Eh3QrrofZdfPhw%26af_xp%3Dcustom%26pid%3Donelink%26c%3Dnaiming" >Go <span className='arrow" '>&rarr;</span></Link>}</button>
+        background-animate ${secondsLeft <= 0 ? 'hover:text-white transition hover:duration-250' : ''} ease-in-out`} disabled={secondsLeft > 0}>{secondsLeft > 0 ? `Waiting...0${secondsLeft}` : <Link className="px-5 py-3 block" to={`${window.googleUrl ? window.googleUrl : ''}`} >Go <span className='arrow" '>&rarr;</span></Link>}</button>
           </div>
         </div>
     );
