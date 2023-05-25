@@ -1,5 +1,5 @@
 
-import {Route, BrowserRouter as Router, Routes} from 'react-router-dom'
+import {Route, HashRouter as Router, Routes} from 'react-router-dom'
 import Home from './components/Home'
 
 function App() {
