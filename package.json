@@ -9,8 +9,8 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "inlined-build": "vite build --config vite.config.ts",
-    "inlined-preview": "vite build --config vite.config.ts && start ./dist/index.html"
+    "inlined-build": "vite build --config vite.config.inlined.ts",
+    "inlined-preview": "vite build --config vite.config.inlined.ts && start ./dist/index.html"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
